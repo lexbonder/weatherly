@@ -1,0 +1,14 @@
+.head {
+  font-family: 'Fjalla One', sans-serif;
+  margin-left: 10px;
+  padding-top: 10px;
+  color: #2EC4B6;
+}
+
+.hour-container {
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  height: 300px;
+  background-color: #011627;
+}
