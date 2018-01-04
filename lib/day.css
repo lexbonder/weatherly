@@ -1,0 +1,11 @@
+.day {
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  margin: 0 10px;
+  width: 12%;
+  min-width: 200px;
+  background-color: #FDFFFC;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #FF9F1C;
+}
