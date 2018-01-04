@@ -1,0 +1,32 @@
+.day {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  font-size: 14px;
+  min-width: 150px;
+  background-color: #FDFFFC;
+  height: 125px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #FF9F1C;
+  overflow-x: scroll;
+}
+
+.title-container {
+  width: 50%;
+  margin-left: 10px;
+  display:inline-block;
+}
+
+.day h5 {
+  font-size: 16px;
+  display: inline-block;
+}
+
+.image-temp-container {
+  margin-left: 5px;
+  margin-top: 10px;
+  display: inline-block;
+  width: 50%;
+}
