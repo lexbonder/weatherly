@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+input {
+  height: 1.5em;
+  width: 500px;
+  font-size: 2em;
+}
+
+ul {
+  width: 500px;
+  margin: auto;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  text-align: left;
+  font-size: 1.5em;
+  padding: 15px;
+
+  &:hover {
+    background-color: #C6EEEB;
+  }
+}

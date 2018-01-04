@@ -1,0 +1,46 @@
+h1, h2, h4 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0 auto 20px;
+}
+
+.tempAndCondition {
+  margin: 15px;
+  display: flex;
+  width: fit-content;
+  margin: 20px auto;
+  
+  div {
+    margin-right: 20px;
+    width: fit-content;
+  }
+}
+
+#weatherDescription {
+  width: 400px;
+  margin: auto;
+}
+
+button {
+  width: 250px;
+  font-size: 2em;
+  margin-top: 20px;
+
+  .clicked {
+    background-color: #2EC4B6;
+  }
+}
+
+#cityName {
+  width: 49%;
+  display: inline-block;
+  text-align: left;
+}
+
+#dateAndTime {
+  width: 49%;
+  display: inline-block;
+  text-align: right;
+}
