@@ -28,4 +28,4 @@ build/Release
 node_modules
 
 #API Key
-lib/api-key.js
+api-key.js
