@@ -3,44 +3,63 @@ h1, h2, h4 {
 }
 
 h3 {
-  margin: 0 auto 20px;
+  font-size: 30px;
+}
+
+.weatherInfo{
+  margin-top: 10px;
+}
+
+#low span {
+  color: #7AD9D0;
+}
+
+#high span {
+  color: #ED5A6C;
 }
 
 .tempAndCondition {
-  margin: 15px;
   display: flex;
-  width: fit-content;
   margin: 20px auto;
-  
-  div {
-    margin-right: 20px;
-    width: fit-content;
-  }
-}
+  align-items: center;
+  justify-items: center;
 
-#weatherDescription {
-  width: 400px;
-  margin: auto;
+  div, h3 {
+    width: 33%;
+  }
 }
 
 button {
-  width: 250px;
+  width: 50%;
   font-size: 2em;
   margin-top: 20px;
 
-  .clicked {
-    background-color: #2EC4B6;
-  }
+}
+.selected {
+  background-color: #2EC4B6;
+}
+
+#cityName, #dateAndTime {
+  width: 49%;
+  display: inline-block;
 }
 
 #cityName {
-  width: 49%;
-  display: inline-block;
   text-align: left;
 }
 
 #dateAndTime {
-  width: 49%;
-  display: inline-block;
   text-align: right;
+}
+
+#temperature {
+  font-size: 80px;
+}
+
+#condition {
+  font-size: 35px;
+}
+
+img {
+  height: 100px;
 }
