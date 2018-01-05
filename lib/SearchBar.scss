@@ -7,19 +7,30 @@ input {
   font-size: 2em;
 }
 
-ul {
+.returnList {
   width: 500px;
   margin: auto;
-  list-style: none;
-  padding: 0;
 }
 
-li {
-  text-align: left;
-  font-size: 1.5em;
-  padding: 15px;
-
-  &:hover {
-    background-color: #C6EEEB;
+  ul {
+    width: 500px;
+    max-height: 205px;
+    overflow: auto;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+    position: absolute;
   }
-}
+
+  li {
+    text-align: left;
+    font-size: 1.5em;
+    padding: 15px;
+    background-color: white;
+    width: 500px;
+    border: 1px solid #C6EEEB;
+
+    &:hover {
+      background-color: #C6EEEB;
+    }
+  }
