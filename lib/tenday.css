@@ -1,5 +1,17 @@
-.tenDay {
+.tenDayContainer {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   align-content: center;
+  width: 800px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.innerContainer{
+  display: flex;
+  align-items: center;
+  min-width: 1750px;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
