@@ -12,6 +12,5 @@
   display: flex;
   align-items: center;
   min-width: 1750px;
-  overflow-x: scroll;
   overflow-y: hidden;
 }
