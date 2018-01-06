@@ -1,16 +1,16 @@
 .tenDayContainer {
   box-sizing: border-box;
   display: flex;
-  align-items: center;
+  align-items: left;
   align-content: center;
-  width: 800px;
-  padding: 20px;
+  width: 900px;
+  padding-top: 20px;
   overflow-x: auto;
 }
 
 .innerContainer{
   display: flex;
   align-items: center;
-  min-width: 1750px;
+  min-width: 1450px;
   overflow-y: hidden;
 }
