@@ -1,11 +1,22 @@
   .hour {
-    font-family: 'Roboto', sans-serif;
-    display: inline-block;
-    margin: 0 10px;
-    width: 12%;
-    min-width: 200px;
-    background-color: #FDFFFC;
-    border-radius: 10px;
-    text-align: center;
-    border: 2px solid #FF9F1C;
+  font-family: 'Roboto', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 12px;
+  width: 200px;
+  background-color: #FDFFFC;
+  height: 125px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #FF9F1C;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  }
+
+  .hour h5 {
+    font-size: 16px;
+  }
+  img {
+    height: 75px;
   }

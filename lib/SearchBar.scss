@@ -2,8 +2,13 @@
   box-sizing: border-box;
 }
 input {
+  outline: none;
+  border: none;
+  border-radius: 9px;
+  opacity: .9;
   height: 1.5em;
-  width: 500px;
+  width: 45%;
+  min-width: 360px;
   font-size: 2em;
 }
 
@@ -23,6 +28,7 @@ input {
   }
 
   li {
+    opacity: .8;
     text-align: left;
     font-size: 1.5em;
     padding: 15px;
@@ -35,8 +41,13 @@ input {
     }
   }
 
-    .welcome {
-    padding-top: 40%;
+    .welcome2 {
+    padding-top: 300px;
+    }
+
+    #welcome {
+      height: 100%;
+      width: 100%;
     }
 
     .loaded {
@@ -44,12 +55,26 @@ input {
     }
 
     .title {
+      font-family: 'Fjalla One';
       font-size: 65px;
       color: #FF9F1C;
     }
 
     #header-decoration{
       color: #2EC4B6;
+    }
+
+    .background {
+      background-image: url('../images/welcome-background.jpg');
+      background-size: cover;
+      background-position: inherit;
+      background-repeat: no-repeat;
+
+    }
+
+    #loaded .background {
+      background-position: fixed;
+      background-position-y: -400px;
     }
 
 

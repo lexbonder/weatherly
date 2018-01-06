@@ -1,16 +1,11 @@
-/*.head {
-  font-family: 'Fjalla One', sans-serif;
-  margin-left: 10px;
-  padding-top: 10px;
-  color: #2EC4B6;
-}*/
 
 .hour-container {
-  box-sizing: border-box;
   margin: auto;
-  width: 800px;
-  padding: 20px;
-  background-color: #011627;
-  text-align: left;
+  box-sizing: border-box;
+  display: flex;
+  align-items: left;
+  align-content: center;
+  width: 900px;
+  padding-top: 20px;
   overflow-x: auto;
 }
