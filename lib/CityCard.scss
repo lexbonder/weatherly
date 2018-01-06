@@ -1,3 +1,10 @@
+.cardContainer {
+  background-color: #FDFFFC;
+}
+
+* {
+  font-family: 'Fjalla One';
+}
 h1, h2, h4 {
   margin: 0;
 }
@@ -7,7 +14,9 @@ h3 {
 }
 
 .weatherInfo{
+  margin: auto;
   margin-top: 10px;
+  max-width: 900px;
 }
 
 #low span {
@@ -40,17 +49,16 @@ button {
 }
 
 #cityName, #dateAndTime {
-  width: 49%;
-  display: inline-block;
+  text-align: center; 
+  margin: auto;
+  width: 50%;
+  display: block;
 }
 
 #cityName {
-  text-align: left;
+  font-size: 40px
 }
 
-#dateAndTime {
-  text-align: right;
-}
 
 #temperature {
   font-size: 80px;
@@ -60,6 +68,6 @@ button {
   font-size: 35px;
 }
 
-img {
+.card-image {
   height: 100px;
 }

@@ -1,5 +1,6 @@
-div {
-  width: 900px;
+.container {
+  height: 100%;
+  width: 100%;
   margin: auto;
   text-align: center;
 }
