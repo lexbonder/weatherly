@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 input {
   outline: none;
   border: none;
@@ -16,6 +17,7 @@ input {
   width: 500px;
   margin: auto;
 }
+
 
   ul {
     width: 500px;
@@ -50,18 +52,10 @@ input {
       width: 100%;
     }
 
-    .loaded {
-      padding-top: 0;
-    }
-
     .title {
       font-family: 'Fjalla One';
       font-size: 65px;
       color: #FF9F1C;
-    }
-
-    #header-decoration{
-      color: #2EC4B6;
     }
 
     .background {
@@ -77,5 +71,11 @@ input {
       background-position-y: -400px;
     }
 
+.title {
+  font-size: 65px;
+  color: #FF9F1C;
+}
 
-
+#header-decoration{
+  color: #2EC4B6;
+}
