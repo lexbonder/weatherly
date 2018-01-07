@@ -9,7 +9,7 @@ input {
   opacity: .9;
   height: 1.5em;
   width: 45%;
-  min-width: 360px;
+  min-width: 320px;
   font-size: 2em;
 }
 
@@ -18,58 +18,56 @@ input {
   margin: auto;
 }
 
+ul {
+  width: 500px;
+  max-height: 205px;
+  overflow: auto;
+  margin: auto;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+}
 
-  ul {
-    width: 500px;
-    max-height: 205px;
-    overflow: auto;
-    margin: auto;
-    list-style: none;
-    padding: 0;
-    position: absolute;
+li {
+  opacity: .8;
+  text-align: left;
+  font-size: 1.5em;
+  padding: 15px;
+  background-color: white;
+  width: 500px;
+  border: 1px solid #C6EEEB;
+
+  &:hover {
+    background-color: #C6EEEB;
   }
+}
 
-  li {
-    opacity: .8;
-    text-align: left;
-    font-size: 1.5em;
-    padding: 15px;
-    background-color: white;
-    width: 500px;
-    border: 1px solid #C6EEEB;
+.welcome2 {
+  padding-top: 300px;
+}
 
-    &:hover {
-      background-color: #C6EEEB;
-    }
-  }
+#welcome {
+  height: 100%;
+  width: 100%;
+}
 
-    .welcome2 {
-    padding-top: 300px;
-    }
+.title {
+  font-family: 'Fjalla One';
+  font-size: 65px;
+  color: #FF9F1C;
+}
 
-    #welcome {
-      height: 100%;
-      width: 100%;
-    }
+.background {
+  background-image: url('../images/welcome-background.jpg');
+  background-size: cover;
+  background-position: inherit;
+  background-repeat: no-repeat;
+}
 
-    .title {
-      font-family: 'Fjalla One';
-      font-size: 65px;
-      color: #FF9F1C;
-    }
-
-    .background {
-      background-image: url('../images/welcome-background.jpg');
-      background-size: cover;
-      background-position: inherit;
-      background-repeat: no-repeat;
-
-    }
-
-    #loaded .background {
-      background-position: fixed;
-      background-position-y: -400px;
-    }
+#loaded .background {
+  background-position: fixed;
+  background-position-y: -400px;
+}
 
 .title {
   font-size: 65px;

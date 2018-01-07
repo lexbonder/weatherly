@@ -3,7 +3,7 @@
   display: flex;
   align-items: left;
   align-content: center;
-  width: 900px;
+  width: 100%;
   padding-top: 20px;
   overflow-x: auto;
 }
@@ -13,4 +13,13 @@
   align-items: center;
   min-width: 1450px;
   overflow-y: hidden;
+}
+
+@media screen and (max-width: 500px) {
+  .innerContainer {
+    min-width: 99%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+  }
 }
