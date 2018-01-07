@@ -22,7 +22,7 @@ describe('CityCard', () => {
     })
   })
 
-  it.skip('Should change the state based on the component clicked', () => {
+  it('Should change the state based on the component clicked', () => {
     expect(wrapper.state().hourlySelect).toEqual('selected')
     expect(wrapper.state().tenDaySelect).toEqual('')
 
@@ -47,7 +47,7 @@ describe('CityCard', () => {
     expect(wrapper.find('TenDay').length).toEqual(0);
   })
 
-  it.skip('Should render the Hourly or TenDay component when clicked', () => {
+  it('Should render the Hourly or TenDay component when clicked', () => {
     expect(wrapper.find('Hourly').length).toEqual(1);
     expect(wrapper.find('TenDay').length).toEqual(0);
 
