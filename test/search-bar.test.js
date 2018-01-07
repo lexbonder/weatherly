@@ -8,7 +8,6 @@ describe('SearchBar', () => {
   let wrapper;
 
   beforeEach( () => {
-    window.localStorage = localStorageMock;
     wrapper = shallow(<SearchBar />);
   })
 
