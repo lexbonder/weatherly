@@ -28,9 +28,9 @@ describe('TenDay', () => {
 
     expect(wrapper.find('div.day').length).toEqual(10);
     expect(wrapper.find('div.title-container').length).toEqual(10);
-    expect(wrapper.find('h5').length).toEqual(10);
+    expect(wrapper.find('h2').length).toEqual(10);
     expect(wrapper.find('img').length).toEqual(10);
     expect(wrapper.find('div.temp-container').length).toEqual(10);
-    expect(wrapper.find('p').length).toEqual(20);
+    expect(wrapper.find('h5').length).toEqual(20);
   })
 })
