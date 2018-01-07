@@ -1,16 +1,22 @@
 .cardContainer {
-  background-color: #FDFFFC;
+  background: rgba(253, 255, 252, .5);
 }
 
 * {
+  color: #011627;
   font-family: 'Fjalla One';
 }
+
 h1, h2, h4 {
   margin: 0;
 }
 
 h3 {
   font-size: 30px;
+}
+
+#weatherDescription, #dateAndTime, #condition {
+  font-family: sans-serif;
 }
 
 .weatherInfo{
@@ -20,7 +26,7 @@ h3 {
 }
 
 .low {
-  color: #7AD9D0;
+  color: #39c4b6;
 }
 
 .high {
@@ -38,32 +44,38 @@ h3 {
   }
 
   .spacing-container {
-  width: 80%;
+  width: 50%;
   }
 }
 
-
 button {
+  outline: none;
+  border: 2px solid #FF9F1C;
   width: 50%;
   font-size: 2em;
   margin-top: 20px;
 
+  &:hover {
+     box-shadow: 0px 0px 28px 5px rgba(231, 166, 26, .4);
+     cursor: pointer;
+  }
 }
+
 .selected {
-  background-color: #2EC4B6;
+  min-height: 46.6px;
+  background-color: #FF9F1C;
 }
 
 #cityName, #dateAndTime {
   text-align: center; 
   margin: auto;
-  width: 50%;
+  width: 70%;
   display: block;
 }
 
 #cityName {
   font-size: 40px
 }
-
 
 #temperature {
   font-size: 80px;

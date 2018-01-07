@@ -4,8 +4,10 @@
   align-items: left;
   align-content: center;
   width: 100%;
-  padding-top: 20px;
+  margin-top: 20px;
   overflow-x: auto;
+  border: 2px solid #FF9F1C;;
+  border-radius: 10px;
 }
 
 .innerContainer{
