@@ -20,7 +20,8 @@
     },
     "globals": {
       "widow": true
-    }
+    },
+    "setupFiles": ["jest-localstorage-mock", "./__setups__/localstorage.js"]
   },
   "author": "Steve Kinney",
   "license": "MIT",
