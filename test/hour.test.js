@@ -27,7 +27,7 @@ describe('Hour', () => {
   it('Should show the hour, conditions, and temperature', () => {
     expect(wrapper.find('h2').text()).toEqual(' 12:00 PM ');
     expect(wrapper.find('h5.hourCondition').text()).toEqual(' Partly Cloudy ');
-    expect(wrapper.find('h5.hourTemp').text()).toEqual(' 47°F ');
+    expect(wrapper.find('h5.hourTemp').text()).toEqual('47°F');
   })
 
 })
