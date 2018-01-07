@@ -19,11 +19,11 @@ h3 {
   max-width: 900px;
 }
 
-#low span {
+.low {
   color: #7AD9D0;
 }
 
-#high span {
+.high {
   color: #ED5A6C;
 }
 
@@ -33,10 +33,15 @@ h3 {
   align-items: center;
   justify-items: center;
 
-  div, h3 {
+  h3 {
     width: 33%;
   }
+
+  .spacing-container {
+  width: 80%;
+  }
 }
+
 
 button {
   width: 50%;
