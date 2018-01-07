@@ -7,17 +7,13 @@
   min-width: 200px;
   background-color: #FDFFFC;
   height: 125px;
-  border-radius: 10px;
   text-align: center;
-  border: 2px solid #FF9F1C;
-  border-bottom: 1px solid #FF9F1C;
+  border-right: 2px solid #FF9F1C;
   overflow-y: hidden;
 }
 
 .title-container {
-  width: 100%;
-  margin-top: 15px;
-  margin-left: 5px;
+  width: 75%;
   margin-bottom: 0;
   display:inline-block;
 }
@@ -44,5 +40,7 @@
   .day {
     width: 100%;
     margin-right: 0;
+    border-right: none;
+    border-bottom: 2px solid #FF9F1C; 
   }
 }
