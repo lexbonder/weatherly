@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import App from '../lib/App.js';
+import App from '../lib/App';
 
 describe('App', () => {
   let wrapper;

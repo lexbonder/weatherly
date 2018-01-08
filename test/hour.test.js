@@ -1,13 +1,15 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import Hour from '../lib/hour.js';
-import MockData from '../lib/mock-data.js';
+import Hour from '../lib/Hour';
+import MockData from '../lib/mock-data';
+import dataCleaner from '../lib/data-cleaner';
 
 describe('Hour', () => {
   let wrapper;
+  let data = dataCleaner(MockData)
 
   beforeEach( () => {
-    wrapper = shallow(<Hour key='0' data={MockData.hourly_forecast[0]} />)
+    wrapper = shallow(<Hour key='0' data={data.hourlyForecast[0]} />)
   })
 
   it('Should be defined', () => {
@@ -15,7 +17,7 @@ describe('Hour', () => {
   })
 
   it('Should have props', () => {
-    expect(wrapper.instance().props.data).toEqual(MockData.hourly_forecast[0]);
+    expect(wrapper.instance().props.data).toEqual(data.hourlyForecast[0]);
   })
 
   it('Should render the Hour, an image, weather conditions, and the temperature', () => {

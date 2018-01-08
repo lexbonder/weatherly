@@ -1,13 +1,15 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import Hourly from '../lib/hourly.js';
-import MockData from '../lib/mock-data.js';
+import Hourly from '../lib/Hourly';
+import MockData from '../lib/mock-data';
+import dataCleaner from '../lib/data-cleaner';
 
 describe('Hourly', () => {
   let wrapper;
+  let data = dataCleaner(MockData);
 
   beforeEach( () => {
-    wrapper = shallow(<Hourly data={MockData.hourly_forecast} />)
+    wrapper = shallow(<Hourly data={data.hourlyForecast} />)
   })
 
   it('Should be defined', () => {
@@ -15,8 +17,8 @@ describe('Hourly', () => {
   })
 
   it('Should have props', () => {
-    expect(wrapper.instance().props.data).toEqual(MockData.hourly_forecast);
-    expect(wrapper.instance().props.data.length).toEqual(36);
+    expect(wrapper.instance().props.data).toEqual(data.hourlyForecast);
+    expect(wrapper.instance().props.data.length).toEqual(7);
   })
 
   it('Should render 7 Hour components', () => {
@@ -24,7 +26,7 @@ describe('Hourly', () => {
   })
 
   it('Should mount 7 Hour components', () => {
-    wrapper = mount(<Hourly data={MockData.hourly_forecast} />)
+    wrapper = mount(<Hourly data={data.hourlyForecast} />)
 
     expect(wrapper.find('div.hour').length).toEqual(7);
     expect(wrapper.find('div.title-container').length).toEqual(7);
