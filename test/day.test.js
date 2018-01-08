@@ -1,13 +1,15 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import Day from '../lib/day.js';
-import MockData from '../lib/mock-data.js';
+import Day from '../lib/Day';
+import MockData from '../lib/mock-data';
+import dataCleaner from '../lib/data-cleaner'
 
 describe('Day', () => {
   let wrapper;
+  let data = dataCleaner(MockData)
 
   beforeEach( () => {
-    wrapper = shallow(<Day key='0' data={MockData.forecast.simpleforecast.forecastday[0]} />)
+    wrapper = shallow(<Day key='0' data={data.dailyForecast[0]} />)
   })
 
   it('Should be defined', () => {
@@ -15,7 +17,7 @@ describe('Day', () => {
   })
 
   it('Should have props', () => {
-    expect(wrapper.instance().props.data).toEqual(MockData.forecast.simpleforecast.forecastday[0]);
+    expect(wrapper.instance().props.data).toEqual(data.dailyForecast[0]);
   })
 
   it('Should render the Date, an image, high, and low for the day', () => {

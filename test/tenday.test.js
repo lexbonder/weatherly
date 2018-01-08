@@ -1,13 +1,15 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import TenDay from '../lib/TenDay.js';
-import MockData from '../lib/mock-data.js';
+import TenDay from '../lib/TenDay';
+import MockData from '../lib/mock-data';
+import dataCleaner from '../lib/data-cleaner';
 
 describe('TenDay', () => {
   let wrapper;
+  let data = dataCleaner(MockData);
 
   beforeEach( () => {
-    wrapper = shallow(<TenDay data={MockData.forecast.simpleforecast.forecastday} />)
+    wrapper = shallow(<TenDay data={data.dailyForecast} />)
   })
 
   it('Should be defined', () => {
@@ -15,7 +17,7 @@ describe('TenDay', () => {
   })
 
   it('Should have props', () => {
-    expect(wrapper.instance().props.data).toEqual(MockData.forecast.simpleforecast.forecastday);
+    expect(wrapper.instance().props.data).toEqual(data.dailyForecast);
     expect(wrapper.instance().props.data.length).toEqual(10);
   })
 
@@ -24,7 +26,7 @@ describe('TenDay', () => {
   })
 
   it('Should mount 10 Day components', () => {
-    wrapper = mount(<TenDay data={MockData.forecast.simpleforecast.forecastday} />)
+    wrapper = mount(<TenDay data={data.dailyForecast} />)
 
     expect(wrapper.find('div.day').length).toEqual(10);
     expect(wrapper.find('div.title-container').length).toEqual(10);

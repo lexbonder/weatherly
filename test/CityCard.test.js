@@ -1,13 +1,15 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import CityCard from '../lib/CityCard.js';
-import MockData from '../lib/mock-data.js';
+import CityCard from '../lib/CityCard';
+import MockData from '../lib/mock-data';
+import dataCleaner from '../lib/data-cleaner';
 
 describe('CityCard', () => {
   let wrapper;
+  let data = dataCleaner(MockData)
 
   beforeEach( () => {
-    wrapper = shallow(<CityCard data={MockData} chosenCity='Louisville, KY' />)
+    wrapper = shallow(<CityCard data={data} chosenCity='Louisville, KY' />)
   })
 
   it('Should be defined', () => {
@@ -39,7 +41,7 @@ describe('CityCard', () => {
 
   it('Should pull up data for the correct city', () => {
     expect(wrapper.instance().props.chosenCity).toEqual('Louisville, KY')
-    expect(wrapper.instance().props.data.current_observation.display_location.full).toEqual('Louisville, KY')
+    expect(wrapper.instance().props.data.currentForecast.cityName).toEqual('Louisville, KY')
   })
 
   it('Should start rendering only an Hourly component', () => {
