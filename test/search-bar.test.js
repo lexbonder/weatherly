@@ -84,7 +84,7 @@ describe('SearchBar', () => {
   it('Should render a CityCard Component when a city is selected', () => {
     expect(wrapper.find('CityCard').length).toEqual(0);
 
-    wrapper.setState({selectedCity: ['NEW YORK, NY'], data:'data returned from api'})
+    wrapper.setState({selectedCity: 'NEW YORK, NY', data:{data: 'data returned from api'}})
 
     expect(wrapper.find('CityCard').length).toEqual(1);
   }) 

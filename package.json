@@ -21,7 +21,10 @@
     "globals": {
       "widow": true
     },
-    "setupFiles": ["jest-localstorage-mock", "./__setups__/localstorage.js"]
+    "setupFiles": [
+      "jest-localstorage-mock",
+      "./__setups__/localstorage.js"
+    ]
   },
   "author": "Steve Kinney",
   "license": "MIT",
@@ -49,6 +52,7 @@
     "eslint-plugin-react": "^5.1.1",
     "file-loader": "^0.11.2",
     "jest": "^20.0.4",
+    "jest-localstorage-mock": "^2.1.0",
     "mocha": "^2.4.5",
     "mocha-loader": "^0.7.1",
     "node-libs-browser": "^1.0.0",
