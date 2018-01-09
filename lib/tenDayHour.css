@@ -1,0 +1,30 @@
+ .ten-day-hour {
+  font-family: 'Roboto', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  width: 30%;
+  min-width: 125px;
+  background-color: #FDFFFC;
+  height: 125px;
+  text-align: center;
+  border: 1px solid #FF9F1C;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  }
+
+  .hour h5 {
+    font-size: 16px;
+  }
+  img {
+    height: 75px;
+  }
+
+  @media screen and (max-width: 500px) {
+  .ten-day-hour {
+    width: 100%;
+    margin-right: 0;
+    border-right: none;
+    border-bottom: 2px solid #FF9F1C; 
+  }
+}

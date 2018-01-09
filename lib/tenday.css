@@ -5,15 +5,15 @@
   align-content: center;
   width: 100%;
   margin-top: 20px;
-  overflow-x: auto;
   border: 2px solid #FF9F1C;;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .innerContainer{
   display: flex;
+  overflow-x: auto;
   align-items: center;
-  min-width: 1450px;
+  width: 100%;
   overflow-y: hidden;
 }
 

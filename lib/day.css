@@ -18,6 +18,15 @@
   display:inline-block;
 }
 
+.daily-hour-container {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 800px;
+  right: 150px;
+  margin-bottom: 10px;
+}
 
 .title-weather {
   width: 50%;
