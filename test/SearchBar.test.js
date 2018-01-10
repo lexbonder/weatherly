@@ -28,12 +28,13 @@ describe('SearchBar', () => {
       foundCities: [],
       value: '',
       selectedCity: '',
-      data: null
+      data: null,
+      colorClass: ''
     })
   })
 
-  it('Should have trie with 1000 cities and 1500 zipcodes', () => {
-    expect(wrapper.instance().trie.wordCount).toEqual(2500)
+  it('Should have trie with 1000 cities', () => {
+    expect(wrapper.instance().trie.wordCount).toEqual(1000)
   })
 
   it('Should change the value state when text is entered in the input', () => {
@@ -51,15 +52,6 @@ describe('SearchBar', () => {
     wrapper.find('input').simulate('keyup', {which: 'y'})
     
     expect(wrapper.state().foundCities).toEqual(['NEW YORK, NY']);
-  })
-
-  it('Should return an error in foundCities when the city doesnt exist', () => {
-    expect(wrapper.state().foundCities).toEqual([]);
-    
-    wrapper.find('input').simulate('change', {target: {value: 'asd'}})
-    wrapper.find('input').simulate('keyup', {which: 'd'})
-    
-    expect(wrapper.state().foundCities).toEqual(['No Matching Cities']);
   })
 
   it('Should render list items when text is entered in the searchbar', () => {
