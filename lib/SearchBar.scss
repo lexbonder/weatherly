@@ -11,6 +11,7 @@ input {
   width: 45%;
   min-width: 320px;
   font-size: 2em;
+  padding: 1em;
 }
 
 .returnList {
@@ -37,10 +38,17 @@ li {
   width: 500px;
   border: 1px solid #C6EEEB;
 
+
   &:hover {
     background-color: #C6EEEB;
     cursor: pointer;
   }
+}
+
+.error {
+  color: red;
+  opacity: 1;
+  border: 1px solid red;
 }
 
 .welcome2 {
