@@ -1,31 +1,15 @@
-# React Starter Kit
+# Weatherly
 
-To install the dependencies:
+This project was our first using React. React takes all the best parts of JavaScript and HTML and pushes them together. I found the component structure of React to make the whole project much easier to understand. Passing information around became much simpler. This project was also our first experience using an API we used the data from The Weather Underground to have live data for whichever city we looked up. We utilized the Complete-Me project to allow autocompletion of cities and zip codes. This project used all of the moving parts to create a weather app. 
 
-```
-npm install
-```
+## Built With
 
-To fire up a development server:
+React
+[WeatherUnderground](https://www.wunderground.com/) API
+[CompleteMe](https://github.com/lexbonder/complete-me) project for auto-complete in search bar.
 
-```
-npm start
-```
+## Authors
 
-Once the server is running, you can visit:
+Alex Bonder [GitHub](https://github.com/lexbonder) [LinkedIn](https://www.linkedin.com/in/lexbonder/)
 
-* `http://localhost:8080/webpack-dev-server/` to run your application.
-* `http://localhost:8080/webpack-dev-server/test.html` to run your test suite in the browser.
-
-To build the static files:
-
-```js
-npm run build
-```
-
-
-To run tests in Node:
-
-```js
-npm test
-```
+Jordan Quinn [GitHub](https://github.com/JordanPQuinn) [LinkedIn](https://www.linkedin.com/in/jordanpquinn/)
