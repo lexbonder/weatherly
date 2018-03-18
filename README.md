@@ -25,10 +25,14 @@ You will need an API key from [WeatherUnderground](https://www.wunderground.com/
 
 In `/lib` add a file called `api-key.js`
 
+Add the following...
+
 ```javascript
 // /lib/api-key.js
 
 export default '(your API key)';
+
+// Remember to add this file to your .gitignore
 ```
 
 Run `npm start` and visit localhost:8080 in your browser
@@ -41,36 +45,16 @@ React
 [WeatherUnderground](https://www.wunderground.com/) API
 [CompleteMe](https://github.com/lexbonder/complete-me) project for auto-complete in search bar.
 
-## Authors
-
-Alex Bonder [GitHub](https://github.com/lexbonder) [LinkedIn](https://www.linkedin.com/in/lexbonder/)
-
-Jordan Quinn [GitHub](https://github.com/JordanPQuinn) [LinkedIn](https://www.linkedin.com/in/jordanpquinn/)
-------
-
-
-
-
-
 ## Tests
-
-The testing Enzyme documentation is helpful for this project:
-[create-react-app
-setupTests.js](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#initializing-test-environment)  
-[initializing the enzyme adapter](http://airbnb.io/enzyme/docs/installation/react-15.html)
 
 The tests are a compilation of unit and integration tests to simulate the methods and events happening in the application.
 
 ## Contributors
 
-Alex Bonder and Casey Dallavalle are the project developers.
-
-## Project layout
-
-<img width="1329" alt="screen shot 2018-01-29 at 9 51 16 am" src="https://user-images.githubusercontent.com/28467245/35522655-2c4a719a-04da-11e8-9766-7b576b599150.png">
-
-<img width="1332" alt="screen shot 2018-01-29 at 9 51 28 am" src="https://user-images.githubusercontent.com/28467245/35522656-2c5f19e2-04da-11e8-98fc-777c80c58833.png">
-
-<img width="1327" alt="screen shot 2018-01-29 at 9 51 44 am" src="https://user-images.githubusercontent.com/28467245/35522657-2c71e842-04da-11e8-84f2-88b6c7b12b27.png">
+Alex Bonder [GitHub](https://github.com/lexbonder) [LinkedIn](https://www.linkedin.com/in/lexbonder/)
 
 Jordan Quinn [GitHub](https://github.com/JordanPQuinn) [LinkedIn](https://www.linkedin.com/in/jordanpquinn/)
+
+## Screenshots
+
+![Landing Page](screenshots/weatherly.png)
