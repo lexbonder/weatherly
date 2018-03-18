@@ -2,7 +2,9 @@
 
 ## Synopsis
 
-This project was our first using React. React takes all the best parts of JavaScript and HTML and pushes them together. I found the component structure of React to make the whole project much easier to understand. Passing information around became much simpler. This project was also our first experience using an API we used the data from The Weather Underground to have live data for whichever city we looked up. We utilized the Complete-Me project to allow autocompletion of cities and zip codes. This project used all of the moving parts to create a weather app. 
+Weatherly is an app that allows the user to search any city and get real time weather information. They are given current weather, a 7 Day forecast, and a 10 Hour Forecast.
+
+This project was our first using React and an API
 
 ## Project Goals
 
